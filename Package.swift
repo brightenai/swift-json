@@ -10,7 +10,7 @@ let package:Package = .init(
         .library(name: "JSONLegacy", targets: ["JSONLegacy"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/tayloraswift/swift-grammar", .upToNextMinor(
+        .package(url: "https://github.com/brightenai/swift-grammar.git", .upToNextMinor(
             from: "0.4.0")),
         .package(url: "https://github.com/apple/swift-testing", .upToNextMinor(
             from: "0.7.0")),
