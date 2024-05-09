@@ -9,7 +9,7 @@ extension JSON
     {
         public
         let value:UInt16  
-        @inlinable public 
+        //@inlinable public 
         init(value:UInt16)
         {
             self.value = value

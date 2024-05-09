@@ -1,6 +1,6 @@
 import Grammar
 
-extension JSON
+public extension JSON
 {
     /// Matches any value, including fragment values.
     ///
@@ -12,10 +12,10 @@ extension JSON
 }
 extension JSON.NodeRule:ParsingRule
 {
-    typealias Terminal = UInt8
+    public typealias Terminal = UInt8
 
     static
-    func parse<Source>(
+    public func parse<Source>(
         _ input:inout ParsingInput<some ParsingDiagnostics<Source>>) throws -> JSON.Node
         where   Source.Element == Terminal,
                 Source.Index == Location

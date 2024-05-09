@@ -1,6 +1,6 @@
 import Grammar
 
-extension JSON.NodeRule
+public extension JSON.NodeRule
 {
     /// Matches an object literal.
     ///
@@ -13,9 +13,9 @@ extension JSON.NodeRule
 }
 extension JSON.NodeRule.Object:ParsingRule
 {
-    typealias Terminal = UInt8
+    public typealias Terminal = UInt8
 
-    static
+    public static
     func parse<Source>(_ input:inout ParsingInput<some ParsingDiagnostics<Source>>)
         throws -> [(key:JSON.Key, value:JSON.Node)]
         where Source.Index == Location, Source.Element == Terminal
