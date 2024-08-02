@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1530"
+   LastUpgradeVersion = "1600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "791B1F972BE7D76F00816AF0"
-               BuildableName = "JSON.framework"
-               BlueprintName = "JSON"
+               BuildableName = "JSONX.framework"
+               BlueprintName = "JSONX"
                ReferencedContainer = "container:swift-json.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "791B1F972BE7D76F00816AF0"
-            BuildableName = "JSON.framework"
-            BlueprintName = "JSON"
+            BuildableName = "JSONX.framework"
+            BlueprintName = "JSONX"
             ReferencedContainer = "container:swift-json.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
