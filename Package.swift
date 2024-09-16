@@ -5,7 +5,7 @@ let package:Package = .init(
     name: "swift-json",
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)],
     products: [
-        .library(name: "JSON2", targets: ["JSON2"]),
+        .library(name: "JSONX", targets: ["JSONX"]),
         .library(name: "JSONAST", targets: ["JSONAST"]),
         .library(name: "JSONLegacy", targets: ["JSONLegacy"]),
     ],
@@ -39,17 +39,13 @@ let package:Package = .init(
                 .product(name: "Grammar", package: "swift-grammar"),
             ]),
 
-        .target(name: "JSON2",
+        .target(name: "JSONX",
             dependencies: [
                 .target(name: "JSONDecoding"),
                 .target(name: "JSONEncoding"),
                 .target(name: "JSONParsing"),
-            ]),
-
-        .testTarget(name: "JSONTests",
-            dependencies: [
-                .target(name: "JSON2"),
-                .product(name: "Testing", package: "swift-testing"),
-            ]),
+            ],
+            path: "Sources/JSON"
+			)
     ]
 )
