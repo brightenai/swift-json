@@ -1,5 +1,5 @@
 {
-  "originHash" : "fa8595a7a58cb38d39f9bd6abb6912c607ba46b9b6016a4994549056615f9b7f",
+  "originHash" : "c1c7f560e63246ec4fcd58f2115e418c2b43df42e0b28fd9083cb84b91cf7e29",
   "pins" : [
     {
       "identity" : "swift-atomics",
@@ -13,10 +13,10 @@
     {
       "identity" : "swift-grammar",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tayloraswift/swift-grammar",
+      "location" : "https://github.com/brightenai/swift-grammar.git",
       "state" : {
-        "revision" : "642d5957896f06b03e35c48fc439488367d3fd21",
-        "version" : "0.4.0"
+        "branch" : "master",
+        "revision" : "61a1bb70633bedfe12075569cf9d821819568421"
       }
     },
     {
