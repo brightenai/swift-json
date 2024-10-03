@@ -18,7 +18,8 @@ extension JSON
 }
 extension JSON.ObjectDecoder:JSONDecodable
 {
-    @inlinable public
+    //@inlinable
+    public
     init(json:JSON.Node) throws
     {
         try self.init(indexing: try .init(json: json))
@@ -26,7 +27,8 @@ extension JSON.ObjectDecoder:JSONDecodable
 }
 extension JSON.ObjectDecoder where CodingKey:RawRepresentable<String>
 {
-    @inlinable public
+    //@inlinable
+    public
     init(indexing object:JSON.Object) throws
     {
         self.init(.init(minimumCapacity: object.count))
@@ -46,7 +48,8 @@ extension JSON.ObjectDecoder where CodingKey:RawRepresentable<String>
 }
 extension JSON.ObjectDecoder
 {
-    @inlinable public __consuming
+//    @inlinable
+    public //__consuming
     func single() throws -> JSON.FieldDecoder<CodingKey>
     {
         guard let (key, value):(CodingKey, JSON.Node) = self.index.first
@@ -64,12 +67,14 @@ extension JSON.ObjectDecoder
         }
     }
 
-    @inlinable public
+//    @inlinable
+    public
     subscript(key:CodingKey) -> JSON.OptionalDecoder<CodingKey>
     {
         .init(key: key, value: self.index[key])
     }
-    @inlinable public
+//    @inlinable
+    public
     subscript(key:CodingKey) -> JSON.FieldDecoder<CodingKey>?
     {
         self.index[key].map { .init(key: key, value: $0) }
